@@ -1,0 +1,19 @@
+{% extends 'user/userindex.html' %}
+{% load static %}
+{% block content %}
+<!--above for template inheritance-->
+
+
+<div class="card" style="width:25rem;">
+<h1>Details of Book</h1>
+
+    <img src="{{book.image.url}}" class="card-img-top" alt="...">
+    <div class="card-body">
+
+       <p class="card-text">{{book.title}}-</p>
+       <p>{{book.price}}Rs</p>
+    </div>
+</div>
+
+{% endblock %}
+

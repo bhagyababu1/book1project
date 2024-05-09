@@ -1,0 +1,28 @@
+{% extends 'admin/index.html' %}
+{% load static %}
+{% block content %}
+<!--above for template inheritance-->
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title</title>-->
+<!--</head>-->
+<!--<body>-->
+
+<div class="card" style="width:50rem;padding:2rem">
+<h1>Update Book</h1>
+<!--below for add img-->
+<form action="" method="POST" enctype="multipart/form-data">
+<!--    <form action="" method="POST">-->
+    {% csrf_token %}
+    {{form.as_p}}
+    <input type="submit" value="Update">
+</form>
+</div>
+
+{% endblock %}
+
+<!--</body>-->
+<!--</html>-->

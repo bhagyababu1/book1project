@@ -1,0 +1,26 @@
+{% extends 'admin/index.html' %}
+{% load static %}
+{% block content %}
+<!--above for template inheritance-->
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title</title>-->
+<!--</head>-->
+<!--<body>-->
+<div class="card" style="width:40rem;height:30rem;padding:1rem">
+<h1>Delete Book</h1>
+
+<form action="" method="POST">
+
+    {%csrf_token%}
+    <h2>Are you sure to delete ? </h2>
+    <input type="submit" value="confirm delete">
+</form>
+</div>
+
+{% endblock %}
+<!--</body>-->
+<!--</html>-->
